@@ -2,7 +2,7 @@
 [Projeto Final - Desenvolvimento Front-End Para Web - Israel]
 Conteúdo - HTML5, CSS3, JAVASCRIPT (Opcional) 
 
-Projeto Final (AV2 de 0,0 a 5,0) (26/10/26)
+Projeto Final (AV2 0,0; 5,0) (26/10/26)
 
 PROPOSTA DE PROJETO FINAL AjudaJá — Conectando Pessoas, Transformando Comunidades Curso: Ciência da Computação — 2º Período
 
