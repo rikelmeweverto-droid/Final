@@ -1,5 +1,5 @@
 # Final
-[Projeto Final - Desenvolvimento Front-End Para Web - Israel] (Vale de 0,0 até 5,0) Conteúdo - HTMl, CSS, JAVASCRIPT
+[Projeto Final - Desenvolvimento Front-End Para Web - Israel] (Vale de 0,0 até 5,0) Conteúdo - HTML5, CSS3, JAVASCRIPT (Opcional) 
 
 Projeto Final (AV2 de 0,0 a 5,0) (26/10/26)
 
