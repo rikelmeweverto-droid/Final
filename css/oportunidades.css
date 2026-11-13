@@ -1,0 +1,625 @@
+/* AJUDAJA - CSS EXTERNO DA PAGINA OPORTUNIDADES | AULA 09
+   HTML = estrutura e conteudo; CSS = aparencia.
+   Seletores de tag: body, h1, h2, a, table.
+   Seletores de classe: .card, .btn, .container, .campo.
+   Seletores de ID: #cabecalho, #menu-principal, #rodape.
+   Layout: Flexbox, margin, padding, backgrounds e media queries.
+*/
+:root {
+   --green: #137b54;
+   --dark: #124a37;
+   --ink: #20372c;
+   --muted: #60746a;
+   --bg: #f5f9f6;
+   --line: #dbe9e0;
+   --white: #fff
+}
+
+* {
+   box-sizing: border-box
+}
+
+html {
+   scroll-behavior: smooth
+}
+
+body {
+   margin: 0;
+   background: var(--bg);
+   color: var(--ink);
+   font-family: Arial, Verdana, sans-serif;
+   line-height: 1.65
+}
+
+a {
+   color: inherit
+}
+
+.container {
+   max-width: 1160px;
+   margin: auto;
+   padding: 0 24px
+}
+
+.skip-link {
+   position: absolute;
+   left: -999px;
+   top: 0;
+   background: white;
+   padding: 12px;
+   z-index: 10
+}
+
+.skip-link:focus {
+   left: 0
+}
+
+.site-header {
+   background: white;
+   border-bottom: 1px solid var(--line)
+}
+
+.navbar {
+   max-width: 1250px;
+   margin: auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 20px;
+   padding: 16px 24px
+}
+
+.logo {
+   font-size: 27px;
+   font-weight: 700;
+   text-decoration: none;
+   color: var(--dark);
+   white-space: nowrap
+}
+
+.logo span {
+   color: var(--green)
+}
+
+.menu {
+   list-style: none;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 17px;
+   padding: 0;
+   margin: 0
+}
+
+.menu a {
+   text-decoration: none;
+   font-size: 14px;
+   font-weight: 600
+}
+
+.menu a:hover,
+.menu a[aria-current=page] {
+   color: var(--green)
+}
+
+.btn,
+.btn-outline,
+.btn-light {
+   display: inline-block;
+   text-decoration: none;
+   border-radius: 9px;
+   padding: 12px 22px;
+   font-weight: 700;
+   border: 2px solid var(--green);
+   font-size: 15px;
+   cursor: pointer
+}
+
+.btn {
+   background: var(--green);
+   color: white
+}
+
+.btn:hover {
+   background: var(--dark);
+   border-color: var(--dark)
+}
+
+.btn-small {
+   padding: 9px 15px;
+   font-size: 13px;
+   white-space: nowrap
+}
+
+.btn-outline {
+   color: var(--green);
+   background: transparent
+}
+
+.btn-light {
+   background: white;
+   color: var(--dark);
+   border-color: white
+}
+
+.hero {
+   background: linear-gradient(125deg, #e5f6eb, #f8fdf9);
+   padding: 88px 0
+}
+
+.hero-grid {
+   display: flex;
+   align-items: center;
+   gap: 60px
+}
+
+.hero-grid>div:first-child {
+   flex: 1.2
+}
+
+.hero-grid>div:last-child {
+   flex: .8
+}
+
+.eyebrow {
+   text-transform: uppercase;
+   letter-spacing: .12em;
+   font-size: 12px;
+   font-weight: 700;
+   color: var(--green)
+}
+
+h1,
+h2,
+h3,
+p {
+   margin-top: 0
+}
+
+h1 {
+   font-size: clamp(34px, 5vw, 58px);
+   line-height: 1.15;
+   letter-spacing: -.035em;
+   margin: 18px 0
+}
+
+h1 em {
+   font-style: normal;
+   color: var(--green)
+}
+
+h2 {
+   font-size: clamp(25px, 3vw, 34px);
+   line-height: 1.2
+}
+
+h3 {
+   font-size: 20px
+}
+
+.hero p,
+.page-intro p {
+   font-size: 18px;
+   max-width: 650px;
+   color: #4c6759
+}
+
+.actions {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 12px;
+   margin-top: 28px
+}
+
+.hero-panel {
+   background: white;
+   border: 1px solid var(--line);
+   border-radius: 24px;
+   padding: 40px;
+   box-shadow: 0 18px 45px #17452a14
+}
+
+.hero-symbol {
+   display: grid;
+   place-items: center;
+   width: 80px;
+   height: 80px;
+   border-radius: 20px;
+   background: #ddf6e7;
+   color: var(--green);
+   font-size: 50px;
+   margin-bottom: 26px
+}
+
+.pill-row {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 8px
+}
+
+.pill-row span,
+.tag {
+   display: inline-block;
+   border-radius: 100px;
+   background: #e0f5e8;
+   color: #176846;
+   font-size: 12px;
+   font-weight: 700;
+   padding: 5px 11px
+}
+
+.section {
+   padding: 65px 0
+}
+
+.section-lead,
+.muted {
+   color: var(--muted)
+}
+
+.cards {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 22px;
+   margin-top: 25px
+}
+
+.cards>.card {
+   flex: 1 1 260px
+}
+
+.card {
+   background: white;
+   border: 1px solid var(--line);
+   border-radius: 16px;
+   padding: 27px;
+   box-shadow: 0 7px 25px #1c44200a
+}
+
+.card h3 {
+   margin: 12px 0 10px;
+   color: var(--dark)
+}
+
+.card p {
+   color: var(--muted)
+}
+
+.text-link {
+   color: var(--green);
+   font-weight: 700;
+   text-decoration: none
+}
+
+.text-link:hover {
+   text-decoration: underline
+}
+
+.cta {
+   text-align: center;
+   padding: 60px 24px;
+   background: var(--dark);
+   color: white
+}
+
+.cta p {
+   color: #d8eee0
+}
+
+.page-intro {
+   background: #e8f5ed;
+   padding: 62px 0 50px
+}
+
+.page-intro h1 {
+   font-size: clamp(32px, 4vw, 48px)
+}
+
+.prose {
+   max-width: 760px;
+   font-size: 18px
+}
+
+.detail-layout {
+   display: flex;
+   gap: 24px
+}
+
+.detail-main {
+   flex: 1.5
+}
+
+.detail-aside {
+   flex: 1
+}
+
+.detail-main,
+.detail-aside {
+   background: white;
+   border: 1px solid var(--line);
+   border-radius: 15px;
+   padding: 30px
+}
+
+.detail-main h3 {
+   margin-top: 26px
+}
+
+.content-list {
+   padding-left: 22px
+}
+
+.detail-aside p {
+   border-bottom: 1px solid var(--line);
+   padding-bottom: 12px
+}
+
+.detail-aside .btn {
+   margin-top: 12px
+}
+
+.form-container {
+   max-width: 700px;
+   margin: auto;
+   background: white;
+   border: 1px solid var(--line);
+   border-radius: 17px;
+   padding: 38px;
+   box-shadow: 0 7px 25px #1c44200a
+}
+
+.campo {
+   margin-bottom: 20px
+}
+
+.campo label {
+   display: block;
+   font-weight: 700;
+   margin-bottom: 7px
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+   width: 100%;
+   padding: 13px 14px;
+   border: 1px solid #c9d9d0;
+   border-radius: 8px;
+   background: white;
+   font: inherit;
+   color: var(--ink)
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+   outline: 2px solid var(--green);
+   outline-offset: 1px
+}
+
+.campo textarea {
+   resize: vertical
+}
+
+.check {
+   margin: 20px 0
+}
+
+.check input {
+   accent-color: var(--green)
+}
+
+.form-notice {
+   font-size: 13px;
+   color: #72591d;
+   background: #fff8e6;
+   border-radius: 8px;
+   padding: 12px
+}
+
+.table-scroll {
+   overflow-x: auto;
+   background: white;
+   border-radius: 14px;
+   border: 1px solid var(--line)
+}
+
+table {
+   width: 100%;
+   border-collapse: collapse;
+   min-width: 600px
+}
+
+caption {
+   text-align: left;
+   padding: 18px;
+   font-weight: 700
+}
+
+th,
+td {
+   text-align: left;
+   padding: 16px;
+   border-top: 1px solid var(--line)
+}
+
+th {
+   background: #edf7f0
+}
+
+.status {
+   background: #e5f5e9;
+   color: #1c7045;
+   padding: 5px 10px;
+   border-radius: 100px;
+   font-size: 13px
+}
+
+.faq-list {
+   max-width: 850px;
+   margin: auto
+}
+
+.faq-list details {
+   background: white;
+   border: 1px solid var(--line);
+   border-radius: 12px;
+   padding: 18px 22px;
+   margin-bottom: 12px
+}
+
+.faq-list summary {
+   cursor: pointer;
+   font-weight: 700
+}
+
+.faq-list p {
+   margin: 14px 0 0;
+   color: var(--muted)
+}
+
+.site-footer {
+   background: #153d2d;
+   color: white;
+   padding: 48px 0
+}
+
+.footer-grid {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 32px
+}
+
+.footer-grid>div:first-child {
+   flex: 2 1 230px
+}
+
+.footer-grid>div:not(:first-child) {
+   flex: 1 1 140px
+}
+
+.footer-grid a:not(.logo) {
+   display: block;
+   color: #d7e9de;
+   text-decoration: none;
+   margin: 8px 0;
+   font-size: 14px
+}
+
+.footer-grid a:hover {
+   text-decoration: underline
+}
+
+.footer-grid h3 {
+   font-size: 16px
+}
+
+.footer-logo {
+   color: white
+}
+
+.footer-grid p,
+.footer-grid small {
+   color: #d7e9de
+}
+
+@media(max-width:1000px) {
+   .navbar {
+      flex-wrap: wrap
+   }
+
+   .menu {
+      order: 3;
+      width: 100%;
+      justify-content: center
+   }
+
+   .hero-grid {
+      gap: 25px
+   }
+}
+
+@media(max-width:760px) {
+
+   .hero-grid,
+   .detail-layout,
+   .footer-grid {
+      flex-direction: column
+   }
+
+   .cards>.card {
+      flex-basis: 100%
+   }
+
+   .hero {
+      padding: 55px 0
+   }
+
+   .section {
+      padding: 45px 0
+   }
+
+   .form-container {
+      padding: 22px
+   }
+
+   .navbar {
+      justify-content: center
+   }
+
+   .hero-panel {
+      padding: 26px
+   }
+
+   .page-intro {
+      padding: 44px 0
+   }
+
+   .footer-grid {
+      gap: 15px
+   }
+}
+
+@media(prefers-reduced-motion:reduce) {
+   html {
+      scroll-behavior: auto
+   }
+}
+
+
+/* Seletores de ID: elementos unicos de cada pagina (Aula 09). */
+#cabecalho {
+   width: 100%
+}
+
+#menu-principal {
+   max-width: 1250px
+}
+
+#rodape {
+   width: 100%
+}
+
+/* Responsividade adicional para imagens e elementos de formulario. */
+img {
+   max-width: 100%;
+   height: auto
+}
+
+@media(max-width:600px) {
+   .menu {
+      justify-content: center
+   }
+
+   .menu a {
+      display: inline-block;
+      padding: 5px
+   }
+
+   .container {
+      padding: 0 16px
+   }
+
+   .form-container {
+      padding: 18px
+   }
+}

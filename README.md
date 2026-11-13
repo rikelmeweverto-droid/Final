@@ -7,55 +7,93 @@ PROPOSTA DE PROJETO FINAL AjudaJá — Conectando Pessoas, Transformando Comunid
 
 Disciplina: Desenvolvimento Front-End para Web
 
-Projeto: AjudaJá — Plataforma de Voluntariado Comunitário
+# AjudaJá — Conectando Pessoas, Transformando Comunidades
 
-1. Tema do Projeto O projeto consiste no desenvolvimento de uma aplicação web denominada AjudaJá, uma plataforma voltada à divulgação de projetos sociais e oportunidades de voluntariado.
-A proposta busca utilizar a tecnologia para aproximar pessoas interessadas em realizar trabalhos voluntários de organizações que promovem ações comunitárias.
+## Sobre o Projeto
 
-A aplicação será desenvolvida inicialmente com HTML5 e CSS3, utilizando JavaScript posteriormente para implementar funcionalidades interativas.
+O **AjudaJá** é uma plataforma web de voluntariado comunitário, desenvolvida para aproximar pessoas interessadas em realizar trabalhos voluntários de organizações que promovem projetos e ações sociais.
 
-2. Problema e Justificativa Muitas pessoas possuem interesse em participar de atividades voluntárias, mas encontram dificuldades para localizar projetos sociais, conhecer suas necessidades e obter informações sobre oportunidades disponíveis.
-Da mesma forma, organizações comunitárias podem enfrentar dificuldades para divulgar suas iniciativas e alcançar novos voluntários.
+A proposta é oferecer um ambiente digital organizado e acessível, facilitando a divulgação de oportunidades, a apresentação de iniciativas comunitárias e a participação de novos voluntários.
 
-Diante desse cenário, o AjudaJá pretende oferecer um ambiente digital organizado e acessível, facilitando a divulgação de oportunidades e incentivando a participação da sociedade em ações de impacto social.
+O projeto busca demonstrar como a tecnologia pode contribuir para o fortalecimento das comunidades e incentivar a solidariedade.
 
-3. Objetivo Geral Desenvolver uma aplicação web que facilite a divulgação de projetos sociais e oportunidades de voluntariado, promovendo a conexão entre organizações comunitárias e pessoas interessadas em contribuir com ações sociais.
+## Problema e Justificativa
 
-4. Objetivos Específicos Desenvolver uma interface web organizada, intuitiva e responsiva. Apresentar informações sobre organizações e projetos sociais. Disponibilizar uma página para consulta de oportunidades de voluntariado. Criar formulários para cadastro de voluntários e organizações. Permitir, futuramente, a realização de inscrições em atividades por meio de funcionalidades desenvolvidas com JavaScript. Organizar as informações de maneira clara e acessível. Aplicar os conhecimentos adquiridos durante a disciplina de Desenvolvimento Front-End para Web.
+Muitas pessoas desejam participar de atividades voluntárias, mas encontram dificuldades para localizar oportunidades e obter informações sobre projetos sociais.
 
-Público-Alvo A aplicação será destinada a estudantes, voluntários, organizações sociais e pessoas interessadas em participar de iniciativas comunitárias.
+Ao mesmo tempo, organizações comunitárias podem enfrentar desafios para divulgar suas iniciativas e alcançar pessoas dispostas a ajudar.
 
-5. Os usuários poderão navegar pelas páginas, conhecer projetos sociais, consultar oportunidades e preencher formulários.
+O **AjudaJá** surge como uma proposta para facilitar essa conexão, reunindo informações sobre projetos, organizações e oportunidades em um único ambiente.
 
-Com a implementação das funcionalidades interativas, será possível simular o gerenciamento de inscrições e a consulta de atividades cadastradas.
+## Objetivo do Projeto
 
-6. Principais Funcionalidades As principais funcionalidades previstas são:
+Desenvolver uma aplicação web simples, intuitiva e responsiva, que facilite a divulgação de oportunidades de voluntariado e promova a conexão entre voluntários e organizações sociais.
 
-  Página inicial com apresentação da plataforma.
-  Página institucional com informações sobre o projeto.
-  Listagem de oportunidades de voluntariado.
-  Visualização dos detalhes das atividades.
-  Apresentação das organizações sociais.
-  Catálogo de projetos comunitários.
-  Formulário de cadastro de voluntários.
-  Formulário de cadastro de organizações.
-  Formulário de inscrição em atividades.
-  Página de acompanhamento das inscrições.
-  Seção de perguntas frequentes.
- 
-  7. Formulário de contato.
+A plataforma também busca incentivar a participação da comunidade em ações que contribuam para o desenvolvimento social.
 
-Também está prevista a implementação futura de filtros de pesquisa, validação de formulários e gerenciamento demonstrativo de inscrições utilizando JavaScript.
+## Como Funciona
 
-8. Tecnologias Utilizadas HTML5: responsável pela estruturação das páginas, formulários, tabelas, links e demais elementos.
-CSS3: utilizado para desenvolver a identidade visual, definir cores, fontes, espaçamentos, organização dos componentes e responsividade.
+O AjudaJá permite que os visitantes naveguem pelas páginas da plataforma, conheçam organizações sociais, explorem projetos comunitários e consultem oportunidades de voluntariado.
 
-JavaScript: utilizado posteriormente para implementar interatividade, validação de formulários, filtros e manipulação dinâmica das informações.
+Cada oportunidade apresenta informações sobre a atividade, permitindo que o interessado compreenda melhor a iniciativa antes de demonstrar interesse em participar.
 
-9. Resultados Esperados Espera-se desenvolver uma aplicação web organizada, acessível e visualmente agradável, capaz de apresentar oportunidades de voluntariado e incentivar a participação em ações comunitárias.
-O projeto permitirá aplicar os conhecimentos adquiridos na disciplina, desenvolver habilidades de programação Front-End e compreender as etapas de construção de uma aplicação web.
+O site também disponibiliza formulários de cadastro para voluntários e organizações, além de páginas destinadas à inscrição e ao acompanhamento das atividades.
 
-Além disso, sua estrutura será utilizada como base para a elaboração de modelos conceitual e lógico de banco de dados na disciplina de Modelagem de Banco de Dados, promovendo a integração entre os conhecimentos estudados.
+Nesta etapa, essas funcionalidades são demonstrativas e representam a estrutura prevista para a aplicação.
 
-O AjudaJá será desenvolvido como um protótipo acadêmico, com possibilidade de expansão futura para uma plataforma funcional de voluntariado.
+## Principais Funcionalidades
 
+- **Página inicial:** apresentação da plataforma e de sua proposta social.
+- **Sobre:** informações sobre os objetivos e a finalidade do AjudaJá.
+- **Oportunidades:** listagem de atividades voluntárias disponíveis.
+- **Detalhes das oportunidades:** informações sobre cada atividade.
+- **Organizações:** apresentação das instituições e suas iniciativas.
+- **Projetos sociais:** divulgação de projetos comunitários.
+- **Cadastro de voluntários:** formulário para pessoas interessadas em ajudar.
+- **Cadastro de organizações:** formulário destinado às instituições sociais.
+- **Inscrição em atividades:** espaço demonstrativo para participação nas oportunidades.
+- **Minhas inscrições:** área destinada ao acompanhamento das inscrições.
+- **Perguntas frequentes:** esclarecimento de dúvidas sobre a plataforma.
+- **Contato:** canal de comunicação com a equipe do AjudaJá.
+
+## Público-Alvo
+
+A plataforma é destinada a estudantes, voluntários, organizações sociais, instituições comunitárias e pessoas interessadas em contribuir com ações de impacto social.
+
+O AjudaJá busca atender tanto quem deseja oferecer seu tempo e suas habilidades quanto organizações que necessitam de apoio para desenvolver suas atividades.
+
+## Tecnologias Utilizadas
+
+O projeto utiliza as seguintes tecnologias:
+
+- **HTML5:** estruturação das páginas, formulários e conteúdos.
+- **CSS3:** identidade visual, organização dos elementos e responsividade.
+- **JavaScript (previsto):** implementação de filtros de pesquisa, validação de formulários e gerenciamento demonstrativo de inscrições.
+
+## Desenvolvimento e Evolução
+
+Atualmente, o AjudaJá possui **12 páginas HTML interligadas**, com estilos CSS organizados em arquivos individuais.
+
+A estrutura foi desenvolvida inicialmente com HTML5 e CSS3, priorizando a navegação, a apresentação das informações e a organização visual.
+
+As próximas etapas preveem a utilização de JavaScript para adicionar interatividade, permitindo simular inscrições, realizar pesquisas e validar informações preenchidas nos formulários.
+
+O projeto também servirá como base para a elaboração dos diagramas conceitual e lógico e do dicionário de dados na disciplina de **Modelagem de Banco de Dados**.
+
+## Contexto Acadêmico
+
+O AjudaJá foi desenvolvido como projeto final da disciplina de **Desenvolvimento Front-End para Web**, ministrada pelo professor **Israel Cunha**, no **2º período do curso de Ciência da Computação**.
+
+O objetivo acadêmico é aplicar os conhecimentos de HTML, CSS e JavaScript na construção de uma aplicação web, integrando organização de conteúdo, desenvolvimento de interfaces e funcionalidades interativas.
+
+## Resultados Esperados
+
+Espera-se que o AjudaJá apresente uma experiência de navegação simples e acessível, facilitando o conhecimento de projetos sociais e incentivando a participação em atividades voluntárias.
+
+Além de contribuir para o aprendizado em desenvolvimento web, o projeto pretende demonstrar o potencial da tecnologia como ferramenta de conexão entre pessoas e organizações.
+
+O AjudaJá é um **protótipo acadêmico**, com possibilidade de expansão futura para uma plataforma funcional de voluntariado comunitário.
+
+---
+
+**AjudaJá — Conectando Pessoas, Transformando Comunidades.**
