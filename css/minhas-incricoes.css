@@ -1,10 +1,3 @@
-/* AJUDAJA - CSS EXTERNO DA PAGINA MINHAS-INSCRICOES | AULA 09
-   HTML = estrutura e conteudo; CSS = aparencia.
-   Seletores de tag: body, h1, h2, a, table.
-   Seletores de classe: .card, .btn, .container, .campo.
-   Seletores de ID: #cabecalho, #menu-principal, #rodape.
-   Layout: Flexbox, margin, padding, backgrounds e media queries.
-*/
 :root {
    --green: #137b54;
    --dark: #124a37;
@@ -621,5 +614,62 @@ img {
 
    .form-container {
       padding: 18px
+   }
+}
+
+
+/* Acesso aos cadastros de voluntário e organização */
+.nav-cadastros {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 9px
+}
+
+.nav-cadastros .btn-small {
+   font-size: 13px;
+   padding: 9px 12px;
+   text-align: center
+}
+
+.escolha-cadastro {
+   background: #f5faf6
+}
+
+.escolha-cadastro .card {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 12px
+}
+
+.escolha-cadastro .card p {
+   flex: 1
+}
+
+.troca-cadastro {
+   margin: 0 0 22px;
+   padding: 12px 16px;
+   background: #f0f8f2;
+   border-radius: 8px
+}
+
+.troca-cadastro a {
+   color: var(--green);
+   font-weight: 700
+}
+
+@media(max-width:760px) {
+   .nav-cadastros {
+      width: 100%
+   }
+
+   .nav-cadastros a {
+      flex: 1 1 145px
+   }
+
+   .escolha-cadastro .card {
+      align-items: stretch
    }
 }

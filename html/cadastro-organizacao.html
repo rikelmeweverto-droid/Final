@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="AjudaJá: conectando voluntários a projetos sociais.">
+    <meta name="author" content="Rikelme Weverton">
     <title>Cadastro de organização | AjudaJá</title>
     <link rel="stylesheet" href="../css/cadastro-organizacao.css">
 </head>
@@ -22,7 +23,10 @@
                 <li><a href="organizacoes.html">Organizações</a></li>
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="contato.html">Contato</a></li>
-            </ul><a class="btn btn-small" href="cadastro-voluntario.html">Seja voluntário</a>
+            </ul>
+            <div class="nav-cadastros" aria-label="Opções de cadastro"><a class="btn-outline btn-small"
+                    href="cadastro-voluntario.html">Sou Voluntário</a><a class="btn btn-small"
+                    href="cadastro-organizacao.html">Sou Organização</a></div>
         </nav>
     </header>
     <main id="conteudo">
@@ -35,6 +39,8 @@
         <section class="section">
             <div class="container">
                 <div class="form-container">
+                    <p class="troca-cadastro">Deseja outro tipo de cadastro? <a
+                            href="cadastro-voluntario.html">Cadastrar como voluntário</a>.</p>
                     <form action="#" method="get" onsubmit="return false">
                         <div class="campo"><label for="nome">Nome da organização</label><input id="nome" name="nome"
                                 type="text" placeholder="" required></div>
